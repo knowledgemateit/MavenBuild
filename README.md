@@ -1,12 +1,15 @@
 
 Use Maven Build first to create war file in Target folder.
-mvn pakage
+
+
 
 sudo yum install java-1.8.0-amazon-corretto.x86
 
 java -version
 
 yum install maven git maven docker tree -y
+
+mvn pakage
 
 sysemctl start docker
 
