@@ -12,4 +12,8 @@ sysemctl start docker
 
 docker run -d --name project -p 8080:8080 consol/tomcat-7.0
 
+docker ps -a ( find the container ID)
+
+docker cp target/java-example.war e04e61981bce:/opt/tomcat/webapps
+
 Access your java project via the web address.
