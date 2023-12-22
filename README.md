@@ -1,17 +1,15 @@
-HelloWorld Servlet example with corresponding Dockerfile
 
 Use Maven Build first to create war file in Target folder.
+mvn pakage
 
-mvn clean package
+sudo yum install java-1.8.0-amazon-corretto.x86
 
-Artifact will be created in target folder.
+java -version
 
-docker build -t mavenbuild .
+yum install maven git maven docker tree -y
 
-Once this is done u will be see image using docker image
+sysemctl start docker
 
-Use below command to run the container
-
-docker run -d -p 8080:8080 --name dockercontainer mavenbuild
+docker run -d --name project -p 8080:8080 consol/tomcat-7.0
 
 Access your java project via the web address.
